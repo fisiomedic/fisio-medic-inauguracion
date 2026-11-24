@@ -10,38 +10,32 @@
 body{font-family:'Montserrat',sans-serif;background:#050E1A;color:#fff;text-align:center;}
 .container{max-width:430px;margin:0 auto;}
 
-/* PORTADA - YA SIN LINEA DIAGONAL NI LOGO ENCIMA DEL TEXTO */
-.hero{min-height:100svh;display:flex;flex-direction:column;justify-content:space-between;padding:34px 22px 0 22px;position:relative;overflow:hidden;
-background:linear-gradient(180deg, rgba(5,14,26,0.92) 0%, rgba(5,30,48,0.88) 50%, rgba(5,14,26,0.96) 100%), url('FB_IMG_1795141085819.jpg');
+/* PORTADA SIN HUECO - TODO JUNTO Y CENTRADO */
+.hero{padding:36px 22px 22px 22px;display:flex;flex-direction:column;align-items:center;gap:18px;
+background:linear-gradient(180deg, rgba(5,14,26,0.94) 0%, rgba(5,30,48,0.92) 100%), url('FB_IMG_1795141085819.jpg');
 background-size:cover;background-position:center;}
-/* Logo de fondo ahora si es marca de agua suave, abajo y sin tapar letras */
-.hero:after{content:'';position:absolute;left:50%;bottom:-20px;transform:translateX(-50%);width:340px;height:340px;background:url('FB_IMG_1795141085819.jpg') center/contain no-repeat;opacity:0.12;pointer-events:none;}
-.hero-top{position:relative;z-index:2;display:flex;flex-direction:column;align-items:center;gap:16px;padding-top:10px;}
-.hero-bottom{position:relative;z-index:2;padding-top:22px;}
-
 .icon-circle{width:68px;height:68px;border:1px solid rgba(168,216,234,0.7);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:30px;background:rgba(5,18,32,0.5);}
 .small-gold{font-size:11px;letter-spacing:5px;color:#A8D8EA;font-weight:600;}
 .sub{font-size:19px;color:#DCEEF5;font-weight:300;}
 .line-gold{display:flex;align-items:center;gap:10px;width:100%;max-width:320px;font-size:10px;letter-spacing:2px;color:#A8D8EA;}
 .line-gold i{flex:1;height:1px;background:rgba(168,216,234,0.4);display:block;}
-
 h1{font-family:'Playfair Display',serif;line-height:0.92;}
-h1 b{display:block;font-size:62px;font-weight:800;letter-spacing:-1px;}
+h1 b{display:block;font-size:62px;font-weight:800;}
 h1 span{display:block;font-size:60px;font-weight:400;color:#A8D8EA;margin-top:4px;}
-.italic-gold{font-family:'Playfair Display',serif;font-style:italic;font-size:34px;color:#D9EEF6;font-weight:600;margin-top:2px;}
+.italic-gold{font-family:'Playfair Display',serif;font-style:italic;font-size:34px;color:#D9EEF6;font-weight:600;}
 
-.btn-gold{display:block;background:linear-gradient(135deg,#D9EEF6,#A8D8EA);color:#06182B;padding:19px;text-decoration:none;font-weight:600;letter-spacing:3px;font-size:13px;border-radius:2px;}
-.foot-small{font-size:9.5px;letter-spacing:3px;color:#9FBECF;padding:16px 0 6px 0;}
-.bottom-bar{display:flex;justify-content:space-between;padding:16px 2px 18px 2px;font-size:9.5px;letter-spacing:2px;color:#C7DDE8;border-top:1px solid rgba(255,255,255,0.14);}
+/* ESTO LLENA EL ESPACIO VACIO - FECHA GRANDE EN EL CENTRO */
+.date-box{border:1px solid rgba(168,216,234,0.4);padding:16px 22px;width:100%;max-width:320px;margin-top:6px;}
+.date-box b{display:block;font-family:'Playfair Display',serif;font-size:28px;letter-spacing:2px;color:#fff;}
+.date-box span{font-size:10px;letter-spacing:3px;color:#A8D8EA;}
+.date-box p{font-size:12px;letter-spacing:1px;color:#DCEEF5;margin-top:6px;}
 
-/* SECCIONES CON ESPACIOS CORRECTOS */
-.section{padding:56px 24px;position:relative;overflow:hidden;}
+.btn-gold{display:block;width:100%;background:linear-gradient(135deg,#D9EEF6,#A8D8EA);color:#06182B;padding:19px;text-decoration:none;font-weight:600;letter-spacing:3px;font-size:13px;margin-top:6px;}
+.foot-small{font-size:9.5px;letter-spacing:3px;color:#9FBECF;padding:2px 0 6px 0;}
+.bottom-bar{display:flex;justify-content:space-between;width:100%;padding:14px 2px 0 2px;font-size:9.5px;letter-spacing:2px;color:#C7DDE8;border-top:1px solid rgba(255,255,255,0.14);}
+
+.section{padding:52px 24px;position:relative;overflow:hidden;}
 .section:before{content:'';position:absolute;inset:12px;border:1px solid rgba(168,216,234,0.35);pointer-events:none;z-index:2;}
 .section-inner{position:relative;z-index:3;display:flex;flex-direction:column;gap:14px;align-items:center;}
-.section h2{font-family:'Playfair Display',serif;font-size:30px;letter-spacing:2px;color:#A8D8EA;text-shadow:0 2px 10px #000;}
-.section p{font-size:15px;line-height:1.65;color:#FFF;font-weight:300;text-shadow:0 2px 8px #000;}
-.sec-dress{background:linear-gradient(rgba(5,18,32,0.84),rgba(5,30,48,0.92)), url('dress.jpg');background-size:cover;background-position:center;}
-.sec-te{background:linear-gradient(rgba(5,18,32,0.84),rgba(5,30,48,0.92)), url('teesperamos.jpg');background-size:cover;background-position:center;}
-.sec-ubi{background:linear-gradient(rgba(5,18,32,0.84),rgba(5,30,48,0.92)), url('ubicación.jpg');background-size:cover;background-position:center;}
-.pill{display:inline-block;border:1px solid #A8D8EA;color:#fff;background:rgba(0,0,0,0.35);padding:11px 20px;border-radius:100px;font-size:11px;letter-spacing:2px;margin-top:6px;}
-.btn-dark{display:block;background:transparent;color:#A8D
+.section h2{font-family:'Playfair Display',serif;font-size:30px;letter-spacing:2px;color:#A8D8EA;}
+.section p{font-size:15px;line
