@@ -7,73 +7,41 @@
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,800;1,600&family=Montserrat:wght@300;400;500;600&display=swap');
 *{box-sizing:border-box;margin:0;padding:0;}
-body{font-family:'Montserrat',sans-serif;background:#061414;color:#fff;text-align:center;}
-.hero{min-height:100vh;padding:28px 18px 0 18px;position:relative;display:flex;flex-direction:column;justify-content:space-between;
-background:linear-gradient(rgba(6,20,20,0.82),rgba(6,20,20,0.92)), url('FB_IMG_1795141085819.jpg');
+body{font-family:'Montserrat',sans-serif;background:#050E1A;color:#fff;text-align:center;}
+.container{max-width:430px;margin:0 auto;}
+
+/* PORTADA - YA SIN LINEA DIAGONAL NI LOGO ENCIMA DEL TEXTO */
+.hero{min-height:100svh;display:flex;flex-direction:column;justify-content:space-between;padding:34px 22px 0 22px;position:relative;overflow:hidden;
+background:linear-gradient(180deg, rgba(5,14,26,0.92) 0%, rgba(5,30,48,0.88) 50%, rgba(5,14,26,0.96) 100%), url('FB_IMG_1795141085819.jpg');
 background-size:cover;background-position:center;}
-.hero:before{content:'';position:absolute;top:200px;left:-40px;right:-40px;height:600px;border:1px solid rgba(212,175,106,0.18);transform:rotate(-18deg);pointer-events:none;}
-.hero-top{position:relative;z-index:2;}
-.icon-circle{width:72px;height:72px;border:1px solid rgba(212,175,106,0.6);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:14px auto 20px auto;font-size:32px;background:rgba(6,20,20,0.4);}
-.small-gold{font-size:12px;letter-spacing:5px;color:#D4AF6A;font-weight:600;}
-.sub{font-size:18px;color:#E6EEEE;margin:14px 0;font-weight:300;}
-.line-gold{display:flex;align-items:center;gap:12px;justify-content:center;margin:16px auto;max-width:320px;font-size:10px;letter-spacing:2px;color:#D4AF6A;}
-.line-gold i{flex:1;height:1px;background:rgba(212,175,106,0.4);display:block;}
-h1{font-family:'Playfair Display',serif;line-height:0.95;text-shadow:0 4px 20px rgba(0,0,0,0.6);}
-h1 b{display:block;font-size:58px;letter-spacing:-1px;font-weight:800;}
-h1 span{display:block;font-size:56px;font-weight:400;}
-.italic-gold{font-family:'Playfair Display',serif;font-style:italic;font-size:34px;color:#D4AF6A;margin:18px 0 16px 0;font-weight:600;text-shadow:0 2px 10px #000;}
-.btn-gold{display:block;background:#D4AF6A;color:#111;padding:20px;text-decoration:none;font-weight:600;letter-spacing:3px;font-size:13px;margin:28px 0 18px 0;position:relative;z-index:2;}
-.foot-small{font-size:10px;letter-spacing:3px;color:#B9CACA;padding-bottom:18px;position:relative;z-index:2;}
-.bottom-bar{display:flex;justify-content:space-between;padding:18px 4px 22px 4px;font-size:10px;letter-spacing:2px;color:#D6E0E0;border-top:1px solid rgba(255,255,255,0.15);position:relative;z-index:2;}
-.section{padding:52px 20px;position:relative;overflow:hidden;}
-.section:before{content:'';position:absolute;inset:10px;border:1px solid rgba(212,175,106,0.35);pointer-events:none;z-index:2;}
-.section-inner{position:relative;z-index:3;}
-.section h2{font-family:'Playfair Display',serif;font-size:32px;letter-spacing:2px;color:#D4AF6A;margin-bottom:12px;text-shadow:0 2px 10px #000;}
-.section p{font-size:15.5px;line-height:1.7;color:#FFF;font-weight:300;text-shadow:0 2px 8px #000;}
-.sec-dress{background:linear-gradient(rgba(6,20,20,0.78),rgba(6,20,20,0.88)), url('dress.jpg');background-size:cover;background-position:center;}
-.sec-te{background:linear-gradient(rgba(6,20,20,0.78),rgba(6,20,20,0.88)), url('teesperamos.jpg');background-size:cover;background-position:center;}
-.sec-ubi{background:linear-gradient(rgba(6,20,20,0.78),rgba(6,20,20,0.88)), url('ubicación.jpg');background-size:cover;background-position:center;}
-.pill{display:inline-block;border:1px solid #D4AF6A;color:#fff;background:rgba(0,0,0,0.3);padding:11px 20px;border-radius:100px;font-size:11px;letter-spacing:2px;margin-top:16px;}
-.btn-dark{display:block;background:transparent;color:#D4AF6A;border:1px solid #D4AF6A;padding:17px;text-decoration:none;font-weight:600;letter-spacing:2px;font-size:13px;margin:14px 18px;}
-</style>
-</head>
-<body>
+/* Logo de fondo ahora si es marca de agua suave, abajo y sin tapar letras */
+.hero:after{content:'';position:absolute;left:50%;bottom:-20px;transform:translateX(-50%);width:340px;height:340px;background:url('FB_IMG_1795141085819.jpg') center/contain no-repeat;opacity:0.12;pointer-events:none;}
+.hero-top{position:relative;z-index:2;display:flex;flex-direction:column;align-items:center;gap:16px;padding-top:10px;}
+.hero-bottom{position:relative;z-index:2;padding-top:22px;}
 
-<div class="hero">
-<div class="hero-top">
-<div class="icon-circle">🩺</div>
-<p class="small-gold">ESTÁS EN LA LISTA</p>
-<p class="sub">Tienes una invitación</p>
-<div class="line-gold"><i></i> ✦ &nbsp; GRAN INAUGURACIÓN &nbsp; ✦ <i></i></div>
-<h1><b>FISIO</b><span>MEDIC</span></h1>
-<div class="italic-gold">Gran Inauguración</div>
-</div>
-<div>
-<a class="btn-gold" href="#info">ABRIR INVITACIÓN &nbsp; ↗</a>
-<p class="foot-small">UN ACCESO. UNA TARDE INOLVIDABLE.</p>
-<div class="bottom-bar"><span>05 DIC 2026 • 15:00</span><span>HUAMBALÓ, EC</span></div>
-</div>
-</div>
+.icon-circle{width:68px;height:68px;border:1px solid rgba(168,216,234,0.7);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:30px;background:rgba(5,18,32,0.5);}
+.small-gold{font-size:11px;letter-spacing:5px;color:#A8D8EA;font-weight:600;}
+.sub{font-size:19px;color:#DCEEF5;font-weight:300;}
+.line-gold{display:flex;align-items:center;gap:10px;width:100%;max-width:320px;font-size:10px;letter-spacing:2px;color:#A8D8EA;}
+.line-gold i{flex:1;height:1px;background:rgba(168,216,234,0.4);display:block;}
 
-<div id="info" class="section sec-dress"><div class="section-inner">
-<h2>DRESS CODE</h2>
-<p>BLACK AND WHITE</p>
-<div class="pill">⚫ &nbsp; ELEGANTE &nbsp; ⚪</div>
-</div></div>
+h1{font-family:'Playfair Display',serif;line-height:0.92;}
+h1 b{display:block;font-size:62px;font-weight:800;letter-spacing:-1px;}
+h1 span{display:block;font-size:60px;font-weight:400;color:#A8D8EA;margin-top:4px;}
+.italic-gold{font-family:'Playfair Display',serif;font-style:italic;font-size:34px;color:#D9EEF6;font-weight:600;margin-top:2px;}
 
-<div class="section sec-te"><div class="section-inner">
-<h2>TE ESPERAMOS</h2>
-<p>Ven a celebrar con nosotros la apertura de Fisio Medic en Huambaló.<br>Será una tarde especial para compartir contigo.</p>
-</div></div>
+.btn-gold{display:block;background:linear-gradient(135deg,#D9EEF6,#A8D8EA);color:#06182B;padding:19px;text-decoration:none;font-weight:600;letter-spacing:3px;font-size:13px;border-radius:2px;}
+.foot-small{font-size:9.5px;letter-spacing:3px;color:#9FBECF;padding:16px 0 6px 0;}
+.bottom-bar{display:flex;justify-content:space-between;padding:16px 2px 18px 2px;font-size:9.5px;letter-spacing:2px;color:#C7DDE8;border-top:1px solid rgba(255,255,255,0.14);}
 
-<div class="section sec-ubi"><div class="section-inner">
-<h2>UBICACIÓN</h2>
-<p>Huambaló<br>Sábado 5 de Diciembre - 3:00 PM</p>
-</div></div>
-
-<a class="btn-dark" href="https://maps.google.com/?q=Huambaló">VER UBICACIÓN</a>
-<a class="btn-gold" style="margin:0 18px 20px 18px;display:block;" href="https://wa.me/593961895506?text=Confirmo%20mi%20asistencia%20a%20la%20Gran%20Inauguración">CONFIRMAR ASISTENCIA</a>
-<p style="font-size:10px;letter-spacing:3px;color:#888;padding-bottom:24px;background:#061414;">FISIO MEDIC • HUAMBALÓ</p>
-
-</body>
-</html>
+/* SECCIONES CON ESPACIOS CORRECTOS */
+.section{padding:56px 24px;position:relative;overflow:hidden;}
+.section:before{content:'';position:absolute;inset:12px;border:1px solid rgba(168,216,234,0.35);pointer-events:none;z-index:2;}
+.section-inner{position:relative;z-index:3;display:flex;flex-direction:column;gap:14px;align-items:center;}
+.section h2{font-family:'Playfair Display',serif;font-size:30px;letter-spacing:2px;color:#A8D8EA;text-shadow:0 2px 10px #000;}
+.section p{font-size:15px;line-height:1.65;color:#FFF;font-weight:300;text-shadow:0 2px 8px #000;}
+.sec-dress{background:linear-gradient(rgba(5,18,32,0.84),rgba(5,30,48,0.92)), url('dress.jpg');background-size:cover;background-position:center;}
+.sec-te{background:linear-gradient(rgba(5,18,32,0.84),rgba(5,30,48,0.92)), url('teesperamos.jpg');background-size:cover;background-position:center;}
+.sec-ubi{background:linear-gradient(rgba(5,18,32,0.84),rgba(5,30,48,0.92)), url('ubicación.jpg');background-size:cover;background-position:center;}
+.pill{display:inline-block;border:1px solid #A8D8EA;color:#fff;background:rgba(0,0,0,0.35);padding:11px 20px;border-radius:100px;font-size:11px;letter-spacing:2px;margin-top:6px;}
+.btn-dark{display:block;background:transparent;color:#A8D
