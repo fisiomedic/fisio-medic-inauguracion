@@ -5,78 +5,78 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Fisio Medic - Gran Inauguración</title>
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Montserrat:wght@300;400;500;600&display=swap');
-*{box-sizing:border-box;}
-body{margin:0;font-family:'Montserrat',sans-serif;background:#0A0A0A;color:#fff;text-align:center;padding:14px;}
-.hero{padding:38px 18px 32px 18px;background:linear-gradient(180deg,#131313,#000);border:1px solid #C9A86A;border-radius:28px;position:relative;overflow:hidden;}
-.hero:before{content:'';position:absolute;inset:8px;border:1px solid rgba(201,168,106,0.45);border-radius:20px;pointer-events:none;}
-.hero img{width:100%;max-width:400px;border-radius:18px;border:1px solid rgba(255,255,255,0.4);box-shadow:0 15px 40px rgba(0,0,0,0.6);}
-.hero h1{font-family:'Cormorant Garamond',serif;font-size:38px;margin:24px 0 0 0;color:#E8D9B0;letter-spacing:6px;font-weight:600;}
-.subtitle{font-size:11px;letter-spacing:5px;color:#C9A86A;margin:8px 0 0 0;font-weight:500;}
-.elegant-line{display:flex;align-items:center;gap:12px;justify-content:center;margin:18px auto 14px auto;max-width:260px;}
-.elegant-line span{flex:1;height:1px;background:linear-gradient(90deg,transparent,#C9A86A);}
-.elegant-line span:last-child{background:linear-gradient(90deg,#C9A86A,transparent);}
-.elegant-line b{color:#C9A86A;font-size:13px;}
-.gran{font-family:'Cormorant Garamond',serif;font-size:34px;font-weight:500;color:#fff;margin:2px 0 14px 0;letter-spacing:1px;font-style:italic;}
-.date-pill{display:inline-block;background:linear-gradient(135deg,#E8D9B0,#C9A86A);color:#111;padding:12px 24px;border-radius:100px;box-shadow:0 10px 25px rgba(201,168,106,0.3);}
-.date-pill small{display:block;font-size:10px;letter-spacing:4px;font-weight:600;}
-.date-pill strong{display:block;font-size:20px;letter-spacing:1px;margin-top:3px;}
-.lugar{margin-top:16px;font-size:13px;letter-spacing:4px;color:#EDEDED;font-weight:300;}
-.lugar b{color:#C9A86A;font-weight:500;}
-.divider{width:60px;height:1px;background:#C9A86A;margin:16px auto;}
-.card,.black-card,.dress{position:relative;margin:16px 0;padding:48px 22px;border-radius:28px;overflow:hidden;border:1px solid #C9A86A;box-shadow:0 12px 35px rgba(0,0,0,0.45);}
-.card:before,.black-card:before,.dress:before{content:'';position:absolute;inset:9px;border:1px solid rgba(201,168,106,0.55);border-radius:20px;pointer-events:none;z-index:2;}
-.card{background:linear-gradient(rgba(0,0,0,0.58),rgba(0,0,0,0.68)), url('teesperamos.jpg');background-size:cover;background-position:center;}
-.black-card{background:linear-gradient(rgba(0,0,0,0.62),rgba(0,0,0,0.72)), url('ubicación.jpg');background-size:cover;background-position:center;}
-.dress{background:linear-gradient(rgba(0,0,0,0.62),rgba(0,0,0,0.70)), url('dress.jpg');background-size:cover;background-position:center;}
-.card h2,.black-card h2,.dress h2{position:relative;z-index:3;font-family:'Cormorant Garamond',serif;font-size:32px;letter-spacing:4px;color:#D9BE7E;margin:0 0 14px 0;text-shadow:0 2px 12px #000;}
-.card p,.black-card p{position:relative;z-index:3;font-size:16.5px;line-height:1.7;color:#F5F5F5;font-weight:300;text-shadow:0 2px 10px #000;}
-.dress p{position:relative;z-index:3;font-size:16px;letter-spacing:4px;font-weight:400;}
-.circles{position:relative;z-index:3;font-size:34px;letter-spacing:14px;margin:12px 0;}
-.btn{display:block;background:#0A0A0A;color:#D9BE7E;border:1px solid #C9A86A;padding:17px;border-radius:100px;text-decoration:none;font-weight:500;font-size:14px;letter-spacing:2px;margin:14px 0;box-shadow:0 8px 25px rgba(0,0,0,0.4);}
-.btn2{background:linear-gradient(135deg,#E8D9B0,#C9A86A);color:#111;border:none;}
-.footer{padding:18px 10px 8px 10px;font-size:11px;letter-spacing:3px;color:#999;}
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,800;1,600&family=Montserrat:wght@300;400;500;600&display=swap');
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:'Montserrat',sans-serif;background:#061414;color:#fff;text-align:center;overflow-x:hidden;}
+/* FONDO COMO EL DE DARÍO - verde oscuro con líneas diagonales */
+.wrap{background:radial-gradient(600px 400px at 50% 0%, #123232 0%, #061414 60%), #061414;min-height:100vh;padding:28px 18px 0 18px;position:relative;}
+.wrap:before{content:'';position:absolute;top:200px;left:-40px;right:-40px;height:600px;border:1px solid rgba(212,175,106,0.18);transform:rotate(-18deg);pointer-events:none;}
+.icon-circle{width:72px;height:72px;border:1px solid rgba(212,175,106,0.5);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:18px auto 22px auto;font-size:32px;}
+.small-gold{font-size:12px;letter-spacing:5px;color:#D4AF6A;font-weight:600;}
+.sub{font-size:18px;color:#C8D6D6;margin:14px 0;font-weight:300;}
+.line-gold{display:flex;align-items:center;gap:12px;justify-content:center;margin:16px auto;max-width:300px;font-size:11px;letter-spacing:2.5px;color:#D4AF6A;}
+.line-gold i{flex:1;height:1px;background:rgba(212,175,106,0.4);display:block;}
+h1{font-family:'Playfair Display',serif;line-height:0.95;}
+h1 b{display:block;font-size:56px;letter-spacing:-1px;font-weight:800;}
+h1 span{display:block;font-size:54px;font-weight:400;letter-spacing:1px;}
+.italic-gold{font-family:'Playfair Display',serif;font-style:italic;font-size:34px;color:#D4AF6A;margin:18px 0 16px 0;font-weight:600;}
+.desc{font-family:'Playfair Display',serif;font-size:19px;line-height:1.6;color:#DDE6E6;max-width:320px;margin:0 auto;}
+.btn-gold{display:block;background:#D4AF6A;color:#111;padding:20px;text-decoration:none;font-weight:600;letter-spacing:3px;font-size:13px;margin:28px 0 18px 0;}
+.foot-small{font-size:10px;letter-spacing:3px;color:#9DB1B1;padding-bottom:18px;}
+.bottom-bar{display:flex;justify-content:space-between;padding:18px 4px 20px 4px;font-size:10px;letter-spacing:2px;color:#A9BCBC;border-top:1px solid rgba(255,255,255,0.08);}
+
+/* SECCIONES ABAJO CON MISMO ESTILO */
+.section{padding:38px 18px;background:#071A1A;border-top:1px solid rgba(212,175,106,0.25);}
+.section h2{font-family:'Playfair Display',serif;font-size:30px;letter-spacing:2px;color:#D4AF6A;margin-bottom:12px;}
+.section p{font-size:15px;line-height:1.7;color:#DDE6E6;font-weight:300;}
+.card-img{margin:16px 0;border-radius:18px;overflow:hidden;border:1px solid rgba(212,175,106,0.4);}
+.card-img img{width:100%;display:block;height:220px;object-fit:cover;}
+.pill{display:inline-block;border:1px solid #D4AF6A;color:#D4AF6A;padding:10px 18px;border-radius:100px;font-size:11px;letter-spacing:2px;margin-top:12px;}
+.btn-dark{display:block;background:transparent;color:#D4AF6A;border:1px solid #D4AF6A;padding:17px;border-radius:0;text-decoration:none;font-weight:600;letter-spacing:2px;font-size:13px;margin:14px 18px;}
 </style>
 </head>
 <body>
 
-<div class="hero">
-<img src="FB_IMG_1795141085819.jpg" alt="Fisio Medic">
-<h1>FISIO MEDIC</h1>
-<p class="subtitle">CENTRO MÉDICO</p>
+<div class="wrap">
+<div class="icon-circle">🩺</div>
+<p class="small-gold">ESTÁS EN LA LISTA</p>
+<p class="sub">Tienes una invitación</p>
 
-<div class="elegant-line"><span></span><b>✦</b><span></span></div>
+<div class="line-gold"><i></i> ✦ &nbsp; GRAN INAUGURACIÓN &nbsp; ✦ <i></i></div>
 
-<div class="gran">Gran Inauguración</div>
+<h1><b>FISIO</b><span>MEDIC</span></h1>
+<div class="italic-gold">Gran Inauguración</div>
 
-<div class="date-pill">
-<small>SÁBADO • 05 DICIEMBRE</small>
-<strong>3:00 PM</strong>
+<p class="desc">Diagnóstico: Huambaló necesitaba un lugar así.<br>Tratamiento: una tarde para celebrar contigo.</p>
+
+<a class="btn-gold" href="#info">ABRIR INVITACIÓN &nbsp; ↗</a>
+<p class="foot-small">UN ACCESO. UNA TARDE INOLVIDABLE.</p>
+
+<div class="bottom-bar"><span>05 DIC 2026 • 15:00</span><span>HUAMBALÓ, EC</span></div>
 </div>
 
-<p class="lugar">HUAMBALÓ &nbsp;•&nbsp; <b>TE ESPERAMOS</b></p>
-</div>
-
-<div class="dress">
+<div id="info" class="section">
 <h2>DRESS CODE</h2>
-<div class="circles">⚫⚪</div>
 <p>BLACK AND WHITE</p>
+<div class="card-img"><img src="dress.jpg"></div>
+<div class="pill">⚫ &nbsp; ELEGANTE &nbsp; ⚪</div>
 </div>
 
-<div class="card">
+<div class="section">
 <h2>TE ESPERAMOS</h2>
-<p>Ven a celebrar con nosotros la apertura de Fisio Medic en Huambaló.<br>Será una tarde especial para compartir contigo.</p>
+<p>Ven a celebrar con nosotros la apertura de Fisio Medic en Huambaló. Será una tarde especial para compartir contigo.</p>
+<div class="card-img"><img src="teesperamos.jpg"></div>
 </div>
 
-<div class="black-card">
+<div class="section">
 <h2>UBICACIÓN</h2>
 <p>Huambaló<br>Sábado 5 de Diciembre - 3:00 PM</p>
+<div class="card-img"><img src="ubicación.jpg"></div>
 </div>
 
-<a class="btn" href="https://maps.google.com/?q=Huambaló">VER UBICACIÓN</a>
-<a class="btn btn2" href="https://wa.me/593961895506?text=Confirmo%20mi%20asistencia%20a%20la%20Gran%20Inauguración">CONFIRMAR ASISTENCIA</a>
-
-<div class="footer">FISIO MEDIC • HUAMBALÓ</div>
+<a class="btn-dark" href="https://maps.google.com/?q=Huambaló">VER UBICACIÓN</a>
+<a class="btn-gold" style="margin:0 18px 20px 18px;display:block;" href="https://wa.me/593961895506?text=Confirmo%20mi%20asistencia%20a%20la%20Gran%20Inauguración">CONFIRMAR ASISTENCIA</a>
+<p style="font-size:10px;letter-spacing:3px;color:#888;padding-bottom:24px;">FISIO MEDIC • HUAMBALÓ</p>
 
 </body>
 </html>
