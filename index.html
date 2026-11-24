@@ -5,73 +5,22 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Fisio Medic - Gran Inauguración</title>
 <style>
-body{margin:0;font-family:'Georgia',serif;background:#000;color:#fff;text-align:center;}
-.hero{padding:50px 20px 30px 20px;background:#000;border-bottom:2px solid #C0C0C0;}
-.hero img{width:100%;max-width:420px;border-radius:20px;border:2px solid #C0C0C0;}
-.hero h1{font-size:32px;margin:20px 0 5px 0;color:#C0C0C0;letter-spacing:3px;}
-.hero p{font-size:20px;color:#E8E8E8;margin:5px 0;}
-.hero .fecha{font-size:20px;font-weight:bold;color:#D9D9D9;}
-.card{
-background:linear-gradient(rgba(0,0,0,0.60),rgba(0,0,0,0.60)), url('teesperamos.jpg');
-background-size:cover;
-background-position:center;
-color:#fff;margin:16px;padding:40px 24px;border-radius:22px;border:2px solid #D4AF37;
-}
-.card h2{color:#D4AF37;letter-spacing:1px;text-shadow:0 2px 8px #000;}
-.card p{font-size:18px;line-height:1.5;text-shadow:0 2px 8px #000;}
-.black-card{
-background:linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)), url('ubicación.jpg');
-background-size:cover;
-background-position:center;
-color:#fff;margin:16px;padding:40px 24px;border-radius:22px;border:2px solid #D4AF37;
-}
-.black-card h2{color:#D4AF37;letter-spacing:3px;text-shadow:0 2px 8px #000;}
-.black-card p{text-shadow:0 2px 8px #000;}
-.dress{
-background:linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)), url('dress.jpg');
-background-size:cover;
-background-position:center;
-color:#fff;margin:16px;padding:40px 24px;border-radius:22px;border:2px solid #C0C0C0;
-}
-.dress h2{margin:0 0 10px 0;font-size:26px;letter-spacing:3px;text-shadow:0 2px 8px #000;}
-.dress p{font-size:19px;margin:5px 0;letter-spacing:1px;text-shadow:0 2px 8px #000;}
-.circles{font-size:40px;letter-spacing:10px;margin:10px 0;}
-.btn{display:block;background:#111;color:#D4AF37;border:2px solid #D4AF37;padding:16px;border-radius:50px;text-decoration:none;font-weight:bold;font-size:18px;margin:16px;}
-.btn2{background:#D4AF37;color:#111;}
-.footer{padding:20px;font-size:14px;color:#aaa;}
-</style>
-</head>
-<body>
-
-<div class="hero">
-<img src="FB_IMG_1795141085819.jpg" alt="Fisio Medic">
-<h1>FISIO MEDIC</h1>
-<p>Gran Inauguración</p>
-<p class="fecha">Sábado 5 DIC - 3:00 PM<br>Huambaló</p>
-</div>
-
-<div class="dress">
-<h2>DRESS CODE</h2>
-<div class="circles">⚫⚪</div>
-<p>BLACK AND WHITE</p>
-</div>
-
-<div class="card">
-<h2>TE ESPERAMOS</h2>
-<p>Ven a celebrar con nosotros la apertura de Fisio Medic en Huambaló.<br>Será una tarde especial para compartir contigo.</p>
-</div>
-
-<div class="black-card">
-<h2>UBICACIÓN</h2>
-<p>Huambaló<br>Sábado 5 de Diciembre - 3:00 PM</p>
-</div>
-
-<a class="btn" href="https://maps.google.com/?q=Huambaló">VER UBICACIÓN</a>
-<a class="btn btn2" href="https://wa.me/593961895506?text=Confirmo%20mi%20asistencia%20a%20la%20Gran%20Inauguración">CONFIRMAR ASISTENCIA</a>
-
-<div class="footer">
-Fisio Medic - Huambaló
-</div>
-
-</body>
-</html>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Montserrat:wght@300;400;500&display=swap');
+*{box-sizing:border-box;}
+body{margin:0;font-family:'Montserrat',sans-serif;background:#0A0A0A;color:#fff;text-align:center;padding:14px;}
+.hero{padding:38px 18px 28px 18px;background:linear-gradient(180deg,#111,#000);border:1px solid #C9A86A;border-radius:28px;position:relative;overflow:hidden;}
+.hero:before{content:'';position:absolute;inset:8px;border:1px solid rgba(201,168,106,0.45);border-radius:20px;pointer-events:none;}
+.hero img{width:100%;max-width:400px;border-radius:18px;border:1px solid rgba(255,255,255,0.4);box-shadow:0 15px 40px rgba(0,0,0,0.6);}
+.hero h1{font-family:'Cormorant Garamond',serif;font-size:38px;margin:22px 0 2px 0;color:#E8D9B0;letter-spacing:6px;font-weight:600;}
+.hero p{font-size:16px;color:#EDEDED;margin:4px 0;letter-spacing:2px;font-weight:300;}
+.hero .fecha{font-size:15px;font-weight:500;color:#C9A86A;letter-spacing:2px;margin-top:10px;line-height:1.6;}
+.divider{width:60px;height:1px;background:#C9A86A;margin:16px auto;}
+.card,.black-card,.dress{position:relative;margin:16px 0;padding:48px 22px;border-radius:28px;overflow:hidden;border:1px solid #C9A86A;box-shadow:0 12px 35px rgba(0,0,0,0.45);}
+.card:before,.black-card:before,.dress:before{content:'';position:absolute;inset:9px;border:1px solid rgba(201,168,106,0.55);border-radius:20px;pointer-events:none;z-index:2;}
+.card{background:linear-gradient(rgba(0,0,0,0.58),rgba(0,0,0,0.68)), url('teesperamos.jpg');background-size:cover;background-position:center;}
+.black-card{background:linear-gradient(rgba(0,0,0,0.62),rgba(0,0,0,0.72)), url('ubicación.jpg');background-size:cover;background-position:center;}
+.dress{background:linear-gradient(rgba(0,0,0,0.62),rgba(0,0,0,0.70)), url('dress.jpg');background-size:cover;background-position:center;}
+.card h2,.black-card h2,.dress h2{position:relative;z-index:3;font-family:'Cormorant Garamond',serif;font-size:32px;letter-spacing:4px;color:#D9BE7E;margin:0 0 14px 0;text-shadow:0 2px 12px #000;}
+.card p,.black-card p{position:relative;z-index:3;font-size:16.5px;line-height:1.7;color:#F5F5F5;font-weight:300;text-shadow:0 2px 10px #000;}
+.dress p{position:relative;z-index:3;font-size:16px;letter-spacing:4px;font-weight:400;}
+.circles{position:relative;z-index:3;font-size:34px;letter-spacing:14px;margin:12px 0;}
